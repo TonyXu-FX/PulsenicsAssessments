@@ -1,1 +1,0 @@
-The hardcoded folder path is in Helpers/FileHandler

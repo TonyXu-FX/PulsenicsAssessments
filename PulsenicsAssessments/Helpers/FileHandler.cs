@@ -99,11 +99,6 @@ namespace PulsenicsAssessments.Helpers
             using var context = new FilesContext();
             return context.Files.Where(f => (f.Name + f.Extension).Contains(searchText)).ToList();
         }
-        public static FileData? GetDbFile(String fileName)
-        {
-            using var context = new FilesContext();
-            return context.Files.Where(f => f.Name + f.Extension == fileName).FirstOrDefault();
-        }
 
         public static FileData? GetDbFileWithUsers(String fileName)
         {
